@@ -15,3 +15,5 @@ def create_directory(directory_name):
 # Directory creation
 directory_name = "my_directory"
 
+# Call function
+create_directory(directory_name)
