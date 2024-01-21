@@ -1,3 +1,7 @@
+### Day 8: Move to Directory
+
+# Modify the script to move "hello.txt" and "hello_copy.txt" into the "my_directory".
+
 import os
 
 def create_directory(directory_name):
