@@ -1,7 +1,7 @@
 # Day 4: File appending
 # Modify the script to append a new line
 
-def appendd_to_file(file_name, new_line):
+def append_to_file(file_name, new_line):
     # Open the file in append (a) mode
     file = open(file_name, 'a')
 
@@ -12,3 +12,8 @@ def appendd_to_file(file_name, new_line):
     file.close()
 
 # File Appending
+file_name = "hello.txt"
+new_line = "Python is powerful!"
+
+# Call the function
+append_to_file(file_name, new_line)
