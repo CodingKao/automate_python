@@ -1,3 +1,0 @@
-hello, Python!Python is powerful!
-Python is powerful!
-Python is powerful!
