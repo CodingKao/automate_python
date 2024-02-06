@@ -29,3 +29,14 @@ def fetch_html_content(url):
                 # Save the image to a local file
                 with open('download_image.jpd', 'wb') as f:
                     f.write(image_response.content)
+
+                print("Image downloaded successfully.")
+            else:
+                print("Failed to download the image.  Status code: {image_response.status_code}")
+        else:
+            print("No image found on the webpage.")
+    else:
+        print("Failed to fetch the HTML.  Status code: {image_response.status_code}")
+
+website_url = 'https://www.example.com/'
+fetch_html_content(website_url)
