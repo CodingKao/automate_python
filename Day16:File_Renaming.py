@@ -1,6 +1,6 @@
-### Day 16: File Renaming
+# Day 16: File Renaming
 
-## Develop a function to rename the "hello_copy.txt" file to "greetings.txt".
+# Develop a function to rename the "hello_copy.txt" file to "greetings.txt".
 
 import os
 
