@@ -1,4 +1,4 @@
-### Day 14: File Deletion
+# Day 14: File Deletion
 # Write a function that deletes the "hello.txt" file.
 
 import os
