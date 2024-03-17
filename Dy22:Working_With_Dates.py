@@ -11,5 +11,9 @@ def print_current_date_time():
     previous_date_time = current_date_time - datetime.timedelta(days=1)
     print("Previous date adn time:", previous_date_time)
 
+    future_date_time = current_date_time + datetime.timedelta(days=1)
+    print("Future date and time: ", future_date_time)
+
+
 # Print Output
 print_current_date_time()
