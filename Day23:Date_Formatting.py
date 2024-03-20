@@ -11,6 +11,5 @@ def current_date_time():
     formatted_date_time = current_date_time.strftime("%Y-%m-%d %H:%M:%S")
     print("Current date and time: ", formatted_date_time)
 
-
 # Print Output
 current_date_time()
