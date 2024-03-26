@@ -12,3 +12,10 @@ def search_files_with_extension(directory, extension, result=[]):
                 search_files_with_extension(item_path, extension, result)
             elif os.path.isfile(item_path) and item.endswith(extension):
                 result.append(item_path)
+    return result
+
+# Output
+directory_path = '/path/to/directory'
+extension = '.txt.'
+found_files = search_files_with_extension(directory_path, extension)
+print("Files with extension", extension, "found in", directory_path, ':", found_files')
