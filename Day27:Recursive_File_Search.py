@@ -5,7 +5,7 @@
 import os
 
 def search_files_with_extension(directory, extension, result=[]):
-    if os.path.isdire(directory):
+    if os.path.isdir(directory):
         for item in os.listdir(directory):
             item_path = os.path.join(directory, item)
             if os.path.isdir(item_path):
