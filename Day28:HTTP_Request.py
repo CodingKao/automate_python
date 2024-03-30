@@ -2,10 +2,14 @@
 
 ### Use the `requests` library to make a basic HTTP request to a public API and print the response.
 
+print("Script started")
+
 import requests
 
 # Make a GET request to a public API
 response = requests.get("https://www.python.org/")
+
+print("Response status code:", response.status_code)
 
 # Check if the GET request was successful
 if response.status_code >= 200 and response.status_code < 300:
