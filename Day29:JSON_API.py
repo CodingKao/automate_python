@@ -5,16 +5,16 @@
 import requests
 
 def fetch_data():
-    # Make GET request to API
-    response = request.get("https://www.python.org/")
+    # Make a GET request to the API endpoint
+    response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
-    # Check if the request was successful
+    # Check if the request was successful (status code 200)
     if response.status_code == 200:
         # Parse the JSON response
         data = response.json()
         return data
     else:
-        print("Failed to fetch data.  Status code:", response.status_code)
+        print("Failed to fetch data. Status code:", response.status_code)
         return None
 
 def print_info(data):
@@ -22,7 +22,15 @@ def print_info(data):
         # Extract relevant information from the data and print
         print("Data fetched successfully:")
         print("Name:", data.get("name"))
-        print("Age:", data.get("aga"))
+        print("Age:", data.get("age"))
         print("Location:", data.get("location"))
     else:
         print("No data available.")
+
+# Main function to fetch data and print information
+def main():
+    data = fetch_data()
+    print_info(data)
+
+if __name__ == "__main__":
+    main()
