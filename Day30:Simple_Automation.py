@@ -7,3 +7,5 @@
 
 import os
 import shutil
+
+def organize_file(directory):
