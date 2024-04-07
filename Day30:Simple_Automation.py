@@ -15,3 +15,7 @@ def organize_file(directory):
     # Scan directory and categorize files 
     for file in os.listdir(directory):
         if os.path.isfile(os.path.join(directory, file)):
+            file_name, file_extension = os.path.split(file)
+            if file_extension not in file_extensions:
+                file_extensions[file_extension] = []
+            file_extensions[file_extension].append(file)
