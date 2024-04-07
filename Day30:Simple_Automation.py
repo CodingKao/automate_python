@@ -8,4 +8,10 @@
 import os
 import shutil
 
-def organize_file(directory)
+def organize_file(directory):
+    # Create a dictionary to store file extensions 
+    file_extensions = {}
+
+    # Scan directory and categorize files 
+    for file in os.listdir(directory):
+        if os.path.isfile(os.path.join(directory, file)):
