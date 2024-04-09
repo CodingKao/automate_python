@@ -19,3 +19,6 @@ def organize_file(directory):
             if file_extension not in file_extensions:
                 file_extensions[file_extension] = []
             file_extensions[file_extension].append(file)
+
+    # Create subdirectories for each file extension
+    for extension, files in file_extension.items():
