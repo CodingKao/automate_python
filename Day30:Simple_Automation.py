@@ -24,3 +24,10 @@ def organize_file(directory):
     for extension, files in file_extension.items():
         subdirectory = os.path.join(directory, extension[1:].upper() + "_Files")
         os.makedire(subdirectory, exist_ok=True)
+
+        # Move files to their respective subdirectories
+        for file in files:
+            source = os.path.join(directory, file)
+            destination = os.path.join(subdirectory, file)
+            shutil.move(source, destination)
+            print(f"Move '{file}' to '{subdirectory}'")
