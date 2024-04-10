@@ -22,3 +22,5 @@ def organize_file(directory):
 
     # Create subdirectories for each file extension
     for extension, files in file_extension.items():
+        subdirectory = os.path.join(directory, extension[1:].upper() + "_Files")
+        os.makedire(subdirectory, exist_ok=True)
