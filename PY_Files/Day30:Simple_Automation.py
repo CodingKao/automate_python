@@ -33,5 +33,5 @@ def organize_files(directory):
             print(f"Moved '{file}' to '{subdirectory}'")
 
 if __name__ == "__main__":
-    directory = "/filepath" # insert my file path here
+    directory = "/home/kao/courses/Python-projects/automate_python" 
     organize_files(directory)
