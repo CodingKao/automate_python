@@ -8,7 +8,7 @@
 import os
 import shutil
 
-def organize_file(directory):
+def organize_files(directory):
     # Create a dictionary to store file extensions 
     file_extensions = {}
 
@@ -31,3 +31,7 @@ def organize_file(directory):
             destination = os.path.join(subdirectory, file)
             shutil.move(source, destination)
             print(f"Move '{file}' to '{subdirectory}'")
+
+if __name__ == "__main__":
+    directory = "/directory" 
+    organize_files(directory)
